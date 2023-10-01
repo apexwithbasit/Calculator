@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal-header> i ,p {
+    color: white;
+    font-size: 1rem;
+}
+.cal-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 16px;
+    gap: 45px;
+}
+.calculator-main{
+    width: 22%;
+    height: 525px;
+    background-color: #001c40;
+    border-radius: 20px;
+    
+}
+.result-block{
+    background-color: #183153;
+    height: 120px;
+    width: 80%;
+    margin-left:26px;
+    margin-right:26px;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+    
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 19px;
+    padding: 7px;
+    margin: 20px;
+}
+.button0{
+    width: 105px;
+}
+button{
+    padding: 9px;
+    border: none;
+    border-radius: 50px;
+    width: 40px;
+    background-color: #ffd43b;
+    color: #001c40;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.num{
+    background-color: transparent;
+    border:2px solid #ffd43b;
+    color:white;
+}
+.num:hover{
+    cursor: pointer;
+    border:2px solid white;
+    color: #ffd43b;
+    box-shadow: 0px 0px 10px white;
+}
+.spenum:hover{
+    cursor: pointer;
+    background-color: white;
+    
+    box-shadow: 0px 0px 10px white;
+}
+/* #main{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 4px;
+} */
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+    
+    
+    <div class="calculator-main">
+        <div id="main">
+            <div class="cal-header">
+                <i class="fa-solid fa-arrow-left"></i>
+                <p>Calculator</p>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="result-block">
+                <p id="value" style="font-size: 2rem;
+                padding-top: 34px; padding-right: 15px;"><p id="value1" style="text-align: center; color:rgb(255, 255, 255)">Made by Abdul Basit Khan ❤</p></p>
+            </div>
+            <div class="btn">
+                <button class="spenum" id="clearall" onclick="clearall()">C</button>
+                <button class="spenum" id="clear">X</button>
+                <button class="spenum" id="percent">%</button>
+                <button class="spenum" id="divide">/</button>
+                <button class="num" id="seven" onclick="buttonclick(7)">7</button>
+                <button class="num" id="eight" onclick="buttonclick(8)">8</button>
+                <button class="num" id="nine"  onclick="buttonclick(9)">9</button>
+                <button class="spenum" id="multiply">*</button>
+                <button class="num" id="four" onclick="buttonclick(4)">4</button>
+                <button class="num" id="five" onclick="buttonclick(5)">5</button>
+                <button class="num" id="six"  onclick="buttonclick(6)">6</button>
+                <button class="spenum" id="minus">-</button>
+                <button class="num" id="one" onclick="buttonclick(1)">1</button>
+                <button class="num" id="two" onclick="buttonclick(2)">2</button>
+                <button class="num" id="three" onclick="buttonclick(3)">3</button>
+                <button class="spenum" id="plus">+</button>
+                <button class="button0 num" id="zero" onclick="buttonclick(0)">0</button>
+                <button class="spenum" id="point">.</button>
+                <button class="spenum" id="equal">=</button>
+            </div>
+        </div>
+        
+       </div> 
+       
+</body>
+</html>
